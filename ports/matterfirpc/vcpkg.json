@@ -3,6 +3,15 @@
     "version": "0.2.57",
     "port-version": 0,
     "features": {
+        "caspersdk": {
+            "description": "Enable Casper SDK support",
+            "dependencies": [
+                {
+                    "name": "caspersdk",
+                    "default-features": false
+                }
+            ]
+        },
         "deploy": {
             "description": "Implement Contract::deploy",
             "dependencies": [
@@ -74,10 +83,6 @@
             "default-features": false
         },
         {
-            "name": "caspersdk",
-            "default-features": false
-        },
-        {
             "name": "cryptopp",
             "default-features": false
         },
@@ -88,6 +93,10 @@
         },
         {
             "name": "magic-enum",
+            "default-features": false
+        },
+        {
+            "name": "nlohmann-json",
             "default-features": false
         },
         {
